@@ -1,0 +1,7 @@
+{
+  "name": "Chistes",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
