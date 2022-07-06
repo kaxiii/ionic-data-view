@@ -1,3 +1,7 @@
+ion-content {
+  --background: url('/assets/bk/bk1.jpg') 0 /auto 100% no-repeat;
+}
+
 #container {
   text-align: center;
 
@@ -17,15 +21,26 @@
   font-size: 16px;
   line-height: 22px;
 
-  color: #8c8c8c;
+  color: yellow;
 
   margin: 0;
 }
 
 #container a {
   text-decoration: none;
+  color: orange;
+  font-weight: bold;
 }
 
 ion-title {
   text-align: center;
+}
+
+#version {
+  text-align: center;
+  font-style: italic;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
 }
