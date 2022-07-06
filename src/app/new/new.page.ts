@@ -12,7 +12,7 @@ export class NewPage implements OnInit {
   constructor(private http: HTTP) { }
 
   ngOnInit() {
-    this.getJSON();
+    //this.getJSON();
   }
 
   public getJSON() {
