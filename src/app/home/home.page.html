@@ -1,17 +1,10 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Datos
-    </ion-title>
+    <ion-icon (click)="openFirst()" name="menu-sharp"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-menu side="start" menuId="first" contentId="main">
-  <ion-header>
-    <ion-toolbar color="primary">
-      <ion-title>Start Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
   <ion-content>
     <ion-list>
       <ion-item routerLink="/new">Nuevos</ion-item>

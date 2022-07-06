@@ -2,6 +2,15 @@ ion-content {
   --background: url('/assets/bk/bk1.jpg') 0 /auto 100% no-repeat;
 }
 
+ion-toolbar ion-icon {
+  font-size: 40px;
+  padding-left: 5px;
+}
+
+ion-toolbar {
+  background-color: aquamarine;
+}
+
 #container {
   text-align: center;
 

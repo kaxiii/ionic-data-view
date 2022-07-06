@@ -27,6 +27,7 @@
     "@capacitor/status-bar": "1.0.8",
     "@ionic/angular": "^6.1.9",
     "cordova-plugin-advanced-http": "^3.3.1",
+    "http": "^0.0.1-security",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
