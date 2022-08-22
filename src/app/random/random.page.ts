@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-random',
@@ -7,14 +8,16 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./random.page.scss'],
 })
 export class RandomPage implements OnInit {
+  datos;
 
-  constructor(private http: HttpClient) { 
-    let data = this.http.get('https://kustod.io/s/2LnBt3dhPKXK71OpKspTvF.json');
-    console.log('Datos ' + data);
-    console.log(data);
-  }
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+    this.data.getData().subscribe(json => {
+      console.log('JSON Data: ');
+      console.log(json);
+      this.datos = JSON.stringify(json);
+    })
   }
 
 }
