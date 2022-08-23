@@ -10,8 +10,6 @@ export class DataService {
 
   getData() {
     let data = this.http.get('https://kustod.io/s/2LnBt3dhPKXK71OpKspTvF.json');
-    console.log('Datos ' + data);
-    console.log(data);
     return data;
   }
 }

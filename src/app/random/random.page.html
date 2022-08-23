@@ -1,5 +1,34 @@
 <ion-content>
   <div class="data-view">
-    {{ datos }}
+    <div class="data-header">
+      {{ id | number:'3.0-0' }}
+    </div>
+    <div class="data-body"> 
+      {{ gag }} 
+    </div>
+    <div class="data-footer">
+      
+    </div>
   </div>
+
+  <div vertical="bottom" class="buttons">
+    <ion-fab class="arrows" horizontal="start">
+      <ion-fab-button color="success" (click) = "prev()">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+    <ion-fab horizontal="center">
+      <ion-fab-button routerLink="/" color="success">
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+    <ion-fab class="arrows" horizontal="end">
+      <ion-fab-button color="success" (click) = "next()">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+
 </ion-content>
